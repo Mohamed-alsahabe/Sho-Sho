@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed & Shrouk | Our Love Story</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Audio (حط أغنيتكم المفضلة بصيغة mp3 وسميها song.mp3 في نفس الفولدر) -->
+    <audio id="loveSong" loop>
+        <source src="songe.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Control Button -->
+    <button id="musicToggle" class="music-btn" onclick="toggleMusic()">🎵 تشغيل أغنيتنا</button>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <span class="badge">قصة حبنا</span>
+            <h1>Mohamed ❤️ Shrouk </h1>
+            <p>البداية الجميلة التي أنارت حياتي كلها.. 20 أغسطس 2023</p>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-content">
+        
+        <!-- Countdown Section -->
+        <section class="card">
+            <h3>مع بعض من يوم 20 أغسطس 2023، وكل ثواني عمري معكِ تفرق:</h3>
+            <div id="counter" class="counter-grid">
+                <div class="time-box">
+                    <span id="days">0</span>
+                    <span class="time-label">يوم</span>
+                </div>
+                <div class="time-box">
+                    <span id="hours">0</span>
+                    <span class="time-label">ساعة</span>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">0</span>
+                    <span class="time-label">دقيقة</span>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">0</span>
+                    <span class="time-label">ثانية</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. Daily Love Note Section (رسالة اليوم المتغيرة تلقائياً) -->
+        <section class="card note-card">
+            <h2>💌 رسالة اليوم لـ Shrouk</h2>
+            <p id="dailyMessage" class="daily-msg">جاري تحميل رسالة اليوم...</p>
+            <span class="note-sub">رسالة بتتغير تلقائياً كل يوم خصيصاً ليكِ!</span>
+        </section>
+
+        <!-- 2. Distance & Connection Card (الغردقة والمنصورة) -->
+        <section class="card distance-card">
+            <h2>🌍 مسافات القلوب</h2>
+            <p>بين <strong>الغردقة</strong> حيث أعمل و<strong>المنصورة</strong> حيث تسكنين.. المسافة تطصغر بذكراكِ كل ثانية.</p>
+            <a href="https://wa.me/01055635573/?text=حبيبي%20محمد%20دخلت%20الموقع%20ولقيت%20رسالة%20اليوم%20بحبك ❤️" target="_blank" class="wa-btn">💬 ابعت لي رسالة حب فوراً</a>
+        </section>
+
+        <!-- 3. Gallery / 3 Photo Cards Section -->
+        <section class="card">
+            <h2>لحظاتنا المميزة 📸</h2>
+            <div class="gallery-grid">
+                <div class="photo-card">
+                    <img src="41.PNG" alt="ذكرى 1">
+                    <p>أول ضحكة جمعتنا ✨</p>
+                </div>
+                <div class="photo-card">
+                    <img src="42.JPEG" alt="ذكرى 2">
+                    <p>أحلى أيام عمري ❤️</p>
+                </div>
+                <div class="photo-card">
+                    <img src="43.JPG" alt="ذكرى 3">
+                    <p>مع بعض دايمأ 💍</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Bucket List / أحلامنا مع بعض -->
+        <section class="card">
+            <h2>✨ أمنياتنا الجاية مع بعض</h2>
+            <ul class="bucket-list">
+                <li>✔️ أول مقابلة وضحكتنا اللي ما تتوصفش</li>
+                <li>⏳ السفر مع بعض لأجمل مكان في الأجازة الجاية</li>
+                <li>⏳ يوم الفرح والبيت اللي يجمعنا على خير</li>
+            </ul>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="card">
+            <h2>محطات في حكايتنا</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">20 أغسطس 2023</span>
+                    <h4>نقطة تحول في حياتي   ✨</h4>
+                    <p>اليوم اليقين اللي عرفت فيه ان ربنا رزقني بأغلى حاجة.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">كل يوم جديد</span>
+                    <h4>ضحكتك اللي بتونسني 💬</h4>
+                    <p>كل مقابله وكل ضحكة بينا بتخليني أتأكد إن ربنا رزقني بأغلى حاجة.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">المستقبل</span>
+                    <h4>عمر كامل مع بعض 💍</h4>
+                    <p>مستني اليوم اللي نبقى فيه في بيت واحد .</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-title">بحبك يا Shrouk ❤️</p>
+        <p class="footer-sub">صنع بـالكثير من الحب بواسطة خطيبك محمد</p>
+    </footer>
+
+    <!-- JavaScript for Everything -->
+    <script>
+        // 1. Counter Logic
+        const startDate = new Date("2023-08-20T00:00:00");
+        function updateCounter() {
+            const now = new Date();
+            const diff = now - startDate;
+            if (diff > 0) {
+                document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
+                document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000);
+            }
+        }
+        setInterval(updateCounter, 1000);
+        updateCounter();
+
+        // 2. Daily Messages Logic (رسائل تلقائية تتغير حسب اليوم)
+        const messages = [
+            "صباح الخير يا أجمل شروق في حياتي.. ربنا ما يحرميني من ضحكتك أبداً اليوم وكل يوم ❤️",
+            "عارفة يا شروق؟ وجودك بيخلي أي يوم صعب يعدي كأنه هواء لطيف.. بحبك جداً ✨",
+            "النهارده وبكل يوم جديد بتأكد إن اختيارك كان أحلى وأصح حاجة حصلت في عمري 💍",
+            "مهما كانت المسافة بين الغردقة والمنصورة بعيدة، قلبي قاعد جنبك دايماً ومطمن بيكِ 🌊",
+            "ضحكتك هي الطاقة اللي بتخليني أكمّل يومي بكل حب وفرح.. ربنا يخليكِ ليا يا غالية 🥰",
+            "كل ثانية بتعدي تقربنا من خطوتنا الكبيرة بتخليني أحس بحماس الدنيا كله.. بحبك موت ❤️",
+            "يا رب دايمأ تكوني مبسوطة ومرتاحة، وعارفة إن في واحد في الدنيا بيحبك وبيتمنى رضاكي كل ثانية 🌟"
+        ];
+        // اختيار رسالة بناءً على يوم السنة الحالي أوتوماتيك
+        const dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+        document.getElementById("dailyMessage").innerText = messages[dayOfYear % messages.length];
+
+        // 3. Audio Player Logic
+        const song = document.getElementById("loveSong");
+        const musicBtn = document.getElementById("musicToggle");
+        function toggleMusic() {
+            if (song.paused) {
+                song.play();
+                musicBtn.innerText = "🔇 إيقاف الأغنية";
+            } else {
+                song.pause();
+                musicBtn.innerText = "🎵 تشغيل أغنيتنا";
+            }
+        }
+    </script>
+</body>
+</html>
